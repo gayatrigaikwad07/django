@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User</title>
+</head>
+<body>
+    <h1> Here are the users list for apptwo</h1>
+    {%if user%}
+    <ol>
+        {%for person in user%}
+        <li>User info</li>
+         <ul>
+            <li>First_name = {{person.first_name}}</li>
+            <li>Last_name ={{person.last_name}}</li>
+            <li>Email ={{email}}</li>
+         </ul>
+        {%endfor%}
+    </ol>
+    {%endif%}
+</body>
+</html>
